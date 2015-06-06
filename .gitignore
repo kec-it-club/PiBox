@@ -2,3 +2,5 @@
 *.swp
 temp/
 __pycache__/
+piBox/__pycache__/
+*.sublime-*
