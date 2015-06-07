@@ -1,8 +1,6 @@
 #!/usr/bin/python
 
-from gi.repository import Gtk
-from gi.repository import WebKit
-from gi.repository import Gdk
+from gi.repository import Gtk, WebKit, Gdk
 import threading
 import piremote
 

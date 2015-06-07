@@ -7,17 +7,12 @@ app = Flask(__name__)
 
 @app.errorhandler(404)
 def not_found(error):
-    return "404: Page not found"
+  return "404: Page not found.", 404
 
-class flaskThread(threading.Thread):
-  def run(self):
-    app.run()
-
-def start():
-  flask = flaskThread()
-  flask.daemon = True
-  flask.start()
-  
+@app.route('/')
+def index():
+  return "Welcome to <b>piBox</b><br>Sorry, we are still under construction. \
+    <a href=\"https://google.com\">Go to Google for now.</a>"
 
 if __name__=='__main__':
   app.run(debug=True)
