@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from flask import Flask, render_template
-import threading
+import controller
 
 app = Flask(__name__)
 
@@ -9,10 +9,7 @@ app = Flask(__name__)
 def not_found(error):
   return "404: Page not found.", 404
 
-@app.route('/')
-def index():
-  return "Welcome to <b>piBox</b><br>Sorry, we are still under construction. \
-    <a href=\"https://google.com\">Go to Google for now.</a>"
+app.register_blueprint(controller.mod)
 
 if __name__=='__main__':
   app.run(debug=True)
