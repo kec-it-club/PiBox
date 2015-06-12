@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from gi.repository import Gtk, WebKit, Gdk
-import threading
+import threading, sys
 import piremote
 
 class Browser(Gtk.Window):
@@ -19,9 +19,12 @@ class Browser(Gtk.Window):
     self.remotethread()
 
     self.set_default_size(800,600)
-    self.set_decorated(False)
-    self.maximize()
-    #self.fullscreen()
+    self.set_decorated(True)
+    
+    if len(sys.argv)>1 and sys.argv[1]=='fullscreen':
+      self.fullscreen()
+    else:
+      self.maximize()
 
     self.show_all()
 
