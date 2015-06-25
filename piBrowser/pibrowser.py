@@ -121,8 +121,10 @@ class Browser(Gtk.Window):
     self.set_default_size(800,600)
     self.set_decorated(True)
     
-    if len(sys.argv)>1 and sys.argv[1]=='fullscreen':
+    if 'f' in sys.argv:
       self.fullscreen()
+    elif 'w' in sys.argv:
+      pass
     else:
       self.maximize()
 
