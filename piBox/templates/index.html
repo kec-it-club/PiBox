@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PiBox Project Responsive UI</title>
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+  <!-- <link href="{{ url_for('static', filename='fonts/Archer-Light-Pro.otf') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='fonts/Gotham-Rounded-Light.otf') }}" rel="stylesheet"> -->
+  <link href="{{ url_for('static', filename='css/piBoxCustom.css') }}" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="nav navbar-nav navbar-left navbar-logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo"> Pi BOX
+      </div>
+      <!--social icons-->
+      <div class="" id="bookmarks">    
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><img src="{{ url_for('static', filename='img/google.png') }}" align="center"></a></li>
+          <li><a href="#"><img src="{{ url_for('static', filename='img/youtube.png') }}" /></a></li>
+          <li><a href="#"><img src="{{ url_for('static', filename='img/facebook.png') }}" /></a></li>
+          <li><a href="#"><img src="{{ url_for('static', filename='img/instagram.png') }}" /></a></li>
+          <li><a href="#"><img src="{{ url_for('static', filename='img/twitter.png') }}" /></a></li>
+          <li><a href="#"><img src="{{ url_for('static', filename='img/email.png') }}" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--social icons-->
+  <div class="subhead"></div>
+
+  <!--header-->
+  <section class="container-fluid" id="main">
+    <div class="row">
+      <ul>
+        <li>
+        <a href="#" class="btn btn-primary"class="col-sm-3" >
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static', filename='img/picture.png') }}"><br>GALLERY
+        </a>
+        </li>
+
+        <li>
+        <a href="browser" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static', filename='img/internet.png') }}"><br>INTERNET
+        </a>
+        </li>
+
+        <li>
+        <a href="#" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static', filename='img/music.png') }}"><br>MUSIC
+        </a>
+        </li>
+
+        <li>
+        <a href="#" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static', filename='img/folder.png') }}"><br>FILE MANAGER
+        </a>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <ul>
+        <li>
+        <a href="#" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static', filename='img/sun.png') }}"><br>WEATHER
+        </a>
+        </li>
+
+        <li>
+        <a href="#" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static', filename='img/googleNews.png') }}"><br>NEWS
+        </a>
+        </li>
+
+        <li>
+        <a href="#" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static', filename='img/movie.png') }}"><br>VIDEO
+        </a>
+        </li>
+
+        <li>
+        <a href="#" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static', filename='img/pdf.png') }}"><br>DOCUMENTS
+        </a>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <ul>
+        <li>
+        <a href="#" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static',filename='img/externalDrive.png') }}"><br>DRIVE
+        </a>
+        </li>
+
+        <li>
+        <a href="#" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static',filename='img/earthquake.png') }}"><br>EARTHQUAKE
+        </a>
+        </li>
+
+        <li> 
+        <a href="#" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static',filename='img/settings.png') }}"><br>SETTINGS
+        </a>
+        </li>
+
+        <li>
+        <a href="#" class="btn btn-primary"class="col-sm-3">
+          <img class="appIMG" class="img-thumbnail" src="{{ url_for('static',filename='img/contactUS.png')}}"><br>CONTACT US
+        </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

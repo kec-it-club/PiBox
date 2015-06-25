@@ -6,7 +6,7 @@ mod = Blueprint('index', __name__)
 
 @mod.route('/')
 def show_index():
-  return render_template('home.html')
+  return render_template('index.html')
 
 @mod.route('/music/')
 def show_music():
