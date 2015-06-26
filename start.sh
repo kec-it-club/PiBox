@@ -1,7 +1,8 @@
 #!/bin/sh
 
-piBox/__init__.py &
+DIR=$( cd "$(dirname $0)" && pwd )
+$DIR/piBox/__init__.py &
 ID=$!
 sleep 0.25
-piBrowser/pibrowser.py
+$DIR/piBrowser/pibrowser.py $1
 kill $ID

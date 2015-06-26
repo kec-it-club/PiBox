@@ -1,6 +1,5 @@
 *.py[cod]
 *.swp
 temp/
-__pycache__/
-piBox/__pycache__/
+*__pycache__*
 *.sublime-*

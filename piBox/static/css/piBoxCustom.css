@@ -1,0 +1,130 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: #333;
+	font-family: sans-serif;
+	height: 100%;
+}
+
+.navbar-socialmedia{
+	font-family:"Archer Light";
+}
+
+.navbar-default
+{
+	background-color: #ebb24c;
+ 	height: 15%; /* height: 100px; */
+	margin-bottom: 0px;
+	border:none;
+	margin-bottom: 50px;
+}
+.navbar-logo{
+	color: #fff;
+	font-size: 2.8em; /* font-size: 60pt; */
+	line-height: 100%;
+	font-family:"Archer Light";
+	color: #fff;
+	height: 150%;
+}
+.navbar-logo img {
+	height: 100%;
+}
+.navbar-logo li {
+	height: 100%;
+}
+.navbar-default .container {
+	width: 100%;
+	height: 100%;
+}
+.subhead{
+	background-color: #40312a;
+	/* height: 175px; */
+	height: 25%;
+	width: 100%;
+	clear: both;
+}
+
+#bookmarks {
+	height: 100%;
+}
+
+#bookmarks ul, #bookmarks ul li {
+	height: 100%;
+}
+
+#bookmarks ul li a {
+	width: 100%;
+	padding: 0px;
+	height: 100%;
+}
+
+#bookmarks ul li a img {
+	height: 100%;
+	padding: 20px 0px;
+	margin: 0px 10px;
+}
+
+.btn-group-justified{
+
+	width:500px;
+	background-color: #333;
+}
+.btn-info.active{
+	background-color: #333;
+}
+
+
+section#main{
+	text-align: center;
+	font-size: 18pt;
+	font-family:"Gotham Rounded Light";
+	background-color: #333;
+	color:#ffffff;
+	height: 75%;
+}
+#main .row{
+	height: 33%;
+}
+.col-sm-3{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.appIMG{
+	height: 75px;
+	width:75px;
+}
+
+.btn-primary{
+	background-color: #636E73;
+	color: #ffffff;
+	outline-color: #333;
+	border-color: #333;
+	border-radius: 0px;
+	height:100%;
+	width: 100%;
+	/* line-height: 800%; */
+	font-size: 20px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.btn-primary img {
+	/* float: left; */
+	margin: 10px;
+}
+
+#main ul {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#main ul li {
+	list-style: none;
+	float: left;
+	width: 25%;
+	height: 100%;
+}
